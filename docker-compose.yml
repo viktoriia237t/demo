@@ -1,0 +1,21 @@
+version: '3'
+
+networks:
+  crm:
+
+services:
+  npm-client:
+    build: ./images
+    container_name: npm-client
+    ports:
+      - '5173:5173'
+      - '80:80'
+    environment:
+      TZ: Europe/Kiev
+    volumes:
+      - ./src:/var/www/front
+      - "/etc/timezone:/etc/timezone:ro"
+      - "/etc/localtime:/etc/localtime:ro"
+    working_dir: /var/www/front
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'
