@@ -1,10 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@tailwind base;
+
+html, body{
+    @apply text-white;
+}
+
 :root {
     --primary-font: Poppins, sans-serif;
-    --primary: #0D1E2F !important;
+    --base-font: SFUIText, sans-serif;
+    --action: #0D1E2F;
+    --primary-40: #2C2D32;
+    --primary-30: #595C6D;
+    --primary-80: #22232B;
+    --primary-90: #18191F;
+    --primary-100: #15161B;
+    --white: #fff;
+    --green: #32E76F;
 
 }
 
 @media (prefers-color-scheme: dark) {
 
+}
+
+
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    @apply bg-transparent;
 }

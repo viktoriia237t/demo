@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 
 import AppAside from "@/components/layout/AppAside.vue";
 import AppHeader from "@/components/layout/AppHeader.vue";

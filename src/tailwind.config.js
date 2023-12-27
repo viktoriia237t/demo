@@ -1,4 +1,4 @@
-module.exports = {
+export default {
     content: [
         "./index.html",
         "./src/**/*.{vue,js,ts,jsx,tsx}",
@@ -7,12 +7,14 @@ module.exports = {
         colors: {
 
             'action': 'var(--action)',
-            'primary': 'var(--primary)',
+            'primary-30': 'var(--primary-30)',
+            'primary-40': 'var(--primary-40)',
+            'primary-90': 'var(--primary-90)',
+            'primary-100': 'var(--primary-100)',
             'red': 'var(--red)',
             'orange': 'var(--orange)',
             'green': 'var(--green)',
-
-            'white': '#ffffff',
+            'white': 'var(--white)',
             'transparent': 'transparent',
         },
 
@@ -24,7 +26,7 @@ module.exports = {
             12: 'repeat(12, minmax(0, 1fr))',
         },
         backgroundImage: {
-            'aside': 'linear-gradient(90deg, #15161B 0%, #22232B 100%)',
+            'aside': 'linear-gradient(90deg, var(--primary-100) 0%, var(--primary-80) 100%)',
         },
         screens: {
             tablet: '576px',
@@ -45,10 +47,12 @@ module.exports = {
         },
         fontFamily: {
             'primary': "var(--font-primary)",
+            'base': "var(--font-base)",
         },
         fontWeight: {
+            'light': 400,
             'normal': 400,
-            'semibold': 600
+            'bold': 700
         },
         lineHeight: {
             1: 1
@@ -66,6 +70,11 @@ module.exports = {
             '4': '4rem', //64px
         },
         height: {
+            8: '8px',
+            16: '16px',
+            24: '24px',
+            32: '32px',
+            68: '68px',
             'auto': 'auto',
             'full': '100%',
             'screen': '100vh',
@@ -78,10 +87,32 @@ module.exports = {
             'full': '100%'
         },
         minHeight: {
+            68: '68px',
             'auto': 'auto',
         },
         width: {
-
+            0: '0px',
+            8: '8px',
+            16: '16px',
+            24: '24px',
+            32: '32px',
+            50: '50px',
+            88: '88px',
+            200: '200px',
+            290: '290px',
+            'full': '100%',
+            'fit-content': 'fit-content',
+        },
+        minWidth:{
+            8: '8px',
+            16: '16px',
+            24: '24px',
+            32: '32px',
+            50: '50px',
+            88: '88px',
+            200: '200px',
+            290: '290px',
+            'full': '100%'
         },
         maxWidth: {
 
@@ -97,7 +128,9 @@ module.exports = {
 
         },
         transitionDuration: {
+            300: '300ms',
             400: '400ms',
+            700: '700ms',
         },
         translate: {
             '-half': '-50%',
@@ -110,6 +143,7 @@ module.exports = {
 
         },
         inset: {
+            '0': '0',
             '1': '1rem', //16px
         },
         divideWidth: {
@@ -125,6 +159,7 @@ module.exports = {
             '1/4': '0.25rem',
             '1/2': '0.5rem',
         },
+
     },
     extend:
         {
@@ -132,11 +167,15 @@ module.exports = {
                 width: 'width, min-width',
             },
             opacity: {
+                30: '0.3',
                 50: '0.5',
+                100: '1',
             },
             backgroundOpacity: {
+                6: '0.06',
                 50: '0.5',
             }
+
         },
     plugins: [],
 }

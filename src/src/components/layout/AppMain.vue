@@ -1,14 +1,18 @@
-<script setup lang="ts">
+<script setup>
 
 </script>
 
 <template>
-<main>
-  Main
+<main class="bg-primary-100">
+  <div class="p-1-1/2">
+
+  </div>
 </main>
 </template>
 
 <style scoped>
-
+main{
+  height: calc(100vh - 68px);
+}
 </style>
 
