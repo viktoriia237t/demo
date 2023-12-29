@@ -8,7 +8,10 @@ export default {
 
             'action': 'var(--action)',
             'primary-30': 'var(--primary-30)',
+            'primary-35': 'var(--primary-35)',
             'primary-40': 'var(--primary-40)',
+            'primary-80': 'var(--primary-80)',
+            'primary-85': 'var(--primary-85)',
             'primary-90': 'var(--primary-90)',
             'primary-100': 'var(--primary-100)',
             'red': 'var(--red)',
@@ -27,6 +30,7 @@ export default {
         },
         backgroundImage: {
             'aside': 'linear-gradient(90deg, var(--primary-100) 0%, var(--primary-80) 100%)',
+            'sidebar': 'linear-gradient(180deg, #23242B 0%, var(--primary-100) 100%)',
         },
         screens: {
             tablet: '576px',
@@ -74,7 +78,11 @@ export default {
             16: '16px',
             24: '24px',
             32: '32px',
+            36: '36px',
             68: '68px',
+            74: '74px',
+            148: '148px',
+            196: '196px',
             'auto': 'auto',
             'full': '100%',
             'screen': '100vh',
@@ -96,27 +104,32 @@ export default {
             16: '16px',
             24: '24px',
             32: '32px',
+            36: '36px',
             50: '50px',
+            74: '74px',
             88: '88px',
+            148: '148px',
             200: '200px',
             290: '290px',
+            368: '368px',
             'full': '100%',
             'fit-content': 'fit-content',
         },
-        minWidth:{
+        minWidth: {
             8: '8px',
             16: '16px',
             24: '24px',
             32: '32px',
+            36: '36px',
             50: '50px',
+            74: '74px',
             88: '88px',
+            148: '148px',
             200: '200px',
             290: '290px',
             'full': '100%'
         },
-        maxWidth: {
-
-        },
+        maxWidth: {},
         borderWidth: {
             0: '0',
             1: '1px',
@@ -143,7 +156,10 @@ export default {
 
         },
         inset: {
+            '-half': '-50%',
             '0': '0',
+            '3/8': '0.375rem', //6px
+            '1/2': '0.5rem', //8px
             '1': '1rem', //16px
         },
         divideWidth: {
@@ -173,6 +189,7 @@ export default {
             },
             backgroundOpacity: {
                 6: '0.06',
+                30: '0.3',
                 50: '0.5',
             }
 

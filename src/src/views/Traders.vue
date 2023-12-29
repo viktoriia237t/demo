@@ -6,7 +6,7 @@ import AppLayout from "@/views/layout/AppLayout.vue";
   <AppLayout>
     <template #header>
       <div class="text-lg text-white font-base font-bold">
-        Cтатистика
+        Support
       </div>
     </template>
 

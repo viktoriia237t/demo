@@ -3,6 +3,7 @@
 import AppAside from "@/components/layout/AppAside.vue";
 import AppHeader from "@/components/layout/AppHeader.vue";
 import AppMain from "@/components/layout/AppMain.vue";
+import BaseSidebar from "@/components/base/BaseSidebar.vue";
 </script>
 
 <template>
@@ -16,14 +17,13 @@ import AppMain from "@/components/layout/AppMain.vue";
         </slot>
       </AppHeader>
       <AppMain>
-
         <slot>
 
         </slot>
-
       </AppMain>
     </div>
   </div>
+
 
 </template>
 

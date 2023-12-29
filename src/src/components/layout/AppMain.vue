@@ -3,9 +3,11 @@
 </script>
 
 <template>
-<main class="bg-primary-100">
-  <div class="p-1-1/2">
+<main class="bg-primary-100 overflow-y-auto">
+  <div class="p-1-1/2 h-full">
+      <slot>
 
+      </slot>
   </div>
 </main>
 </template>

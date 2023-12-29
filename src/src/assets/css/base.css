@@ -10,10 +10,12 @@ html, body{
     --base-font: SFUIText, sans-serif;
     --action: #0D1E2F;
     --primary-40: #2C2D32;
+    --primary-35: #323643;
     --primary-30: #595C6D;
     --primary-80: #22232B;
     --primary-90: #18191F;
     --primary-100: #15161B;
+    --primary-85: #23242B;
     --white: #fff;
     --green: #32E76F;
 

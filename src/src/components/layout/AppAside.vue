@@ -47,7 +47,7 @@ const menu = useMenuStore()
           Статистика
         </nav-item-link>
       </router-link>
-      <router-link to="/traiders">
+      <router-link to="/traders">
         <nav-item-link>
           <template #icon>
             <icon-users/>
