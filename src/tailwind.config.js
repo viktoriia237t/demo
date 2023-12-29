@@ -7,6 +7,7 @@ export default {
         colors: {
 
             'action': 'var(--action)',
+
             'primary-30': 'var(--primary-30)',
             'primary-35': 'var(--primary-35)',
             'primary-40': 'var(--primary-40)',
@@ -14,6 +15,11 @@ export default {
             'primary-85': 'var(--primary-85)',
             'primary-90': 'var(--primary-90)',
             'primary-100': 'var(--primary-100)',
+            'primary-070': 'var(--primary-070)',
+
+            'white-20': 'var(--white-20)',
+            'white-6': 'var(--white-6)',
+
             'red': 'var(--red)',
             'orange': 'var(--orange)',
             'green': 'var(--green)',

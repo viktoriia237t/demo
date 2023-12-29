@@ -70,7 +70,7 @@ const checked = ref(false);
 }
 
 input:checked + .slider {
-  background-color: #40C964;;
+  background-color: #40C964;
 }
 
 input:focus + .slider {

@@ -16,7 +16,10 @@ html, body{
     --primary-90: #18191F;
     --primary-100: #15161B;
     --primary-85: #23242B;
+    --primary-070: rgba(21,22,27,0.70);
     --white: #fff;
+    --white-20: rgba(255, 255, 255, 0.20);
+    --white-6: rgba(255, 255, 255, 0.06);
     --green: #32E76F;
 
 }

@@ -9,7 +9,7 @@ import IconNotification from "@/components/icons/IconNotification.vue";
       <icon-notification class="h-16 w-16 min-w-16"/>
     </div>
     <div class="overflow-hidden flex flex-col gap-3/4">
-      <div class="flex divide-x-1 divide-primary-[rgba(255, 255, 255, 0.20] gap-1/2">
+      <div class="flex divide-x-1 divide-primary-white-20 gap-1/2">
         <div class="text-md font-base font-bold text-white">Lorem ipsum dol</div>
         <div class="text-primary-30 text-sm font-base font-normal pl-3/4">59 хвилин тому</div>
       </div>

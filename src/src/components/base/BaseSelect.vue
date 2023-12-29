@@ -50,9 +50,9 @@ const emit = defineEmits(['language'])
           {{ selected }}
         </span>
         <transition name="slide">
-          <div class="dropdown-options-container w-[200px] absolute bg-primary-80 z-2 border-primary-40 border-1" v-if="showDropdown">
+          <div class="dropdown-options-container w-200 absolute bg-primary-80 z-2 border-primary-40 border-1" v-if="showDropdown">
             <div class="dropdown-options divide-primary-40 divide-y-1 " v-for="option in options">
-              <div class="dropdown-options--cell text-white p-3/4 tex-sm hover:bg-[rgba(255,255,255,0.06)]"
+              <div class="dropdown-options--cell text-white p-3/4 tex-sm hover:bg-white-6"
                    @click="selectOption(option)">
                 <span class="option-text">
                   {{ option }}</span>

@@ -17,7 +17,7 @@ emit('closeSidebar')
   <teleport to="body">
     <Transition name="slide-fade">
       <div v-if="modalOpen" @click="$emit('closeSidebar')"
-           class="modal absolute top-0 left-0 right-0 bottom-0 flex flex-col items-end justify-center bg-[rgba(21,22,27,0.70)]">
+           class="modal absolute top-0 left-0 right-0 bottom-0 flex flex-col items-end justify-center bg-primary-070">
         <div class="right flex flex-col bg-sidebar h-dynamic-screen w-368 ">
           <div @click="$emit('closeSidebar')" class="mx-1-1/2 mt-1-1/2 pb-2 border-b-1 border-primary-40">
             <slot name="header">
