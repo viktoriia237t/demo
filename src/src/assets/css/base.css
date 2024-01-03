@@ -19,8 +19,15 @@ html, body{
     --primary-070: rgba(21,22,27,0.70);
     --white: #fff;
     --white-20: rgba(255, 255, 255, 0.20);
+    --white-30: rgba(255, 255, 255, 0.30);
+    --white-50: rgba(255, 255, 255, 0.50);
     --white-6: rgba(255, 255, 255, 0.06);
     --green: #32E76F;
+    --green-10: #B4ECC7;
+    --green-20: #32DE6C;
+    --green-30: #17A446;
+    --green-40: #135F2D;
+    --green-010: rgba(50, 231, 111, 0.10);
 
 }
 

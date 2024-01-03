@@ -17,12 +17,19 @@ export default {
             'primary-100': 'var(--primary-100)',
             'primary-070': 'var(--primary-070)',
 
+            'white-50': 'var(--white-50)',
+            'white-30': 'var(--white-30)',
             'white-20': 'var(--white-20)',
             'white-6': 'var(--white-6)',
 
             'red': 'var(--red)',
             'orange': 'var(--orange)',
             'green': 'var(--green)',
+            'green-10': 'var(--green-10)',
+            'green-20': 'var(--green-20)',
+            'green-30': 'var(--green-30)',
+            'green-40': 'var(--green-40)',
+            'green-010': 'var(--green-010)',
             'white': 'var(--white)',
             'transparent': 'transparent',
         },
@@ -37,6 +44,8 @@ export default {
         backgroundImage: {
             'aside': 'linear-gradient(90deg, var(--primary-100) 0%, var(--primary-80) 100%)',
             'sidebar': 'linear-gradient(180deg, #23242B 0%, var(--primary-100) 100%)',
+            'statistic-trader': 'linear-gradient(180deg, var(--primary-100) 0%, var(--primary-85) 100%)',
+            'statistic-profit': 'linear-gradient(180deg, var(--primary-85) 0%, var(--primary-100) 100%)',
         },
         screens: {
             tablet: '576px',
@@ -54,6 +63,7 @@ export default {
             '1-3/4': '1.75rem', //28px
             '2': '2rem', //32px
             '2-1/4': '2.25rem', //36px
+            '4': '4rem', //64px
         },
         fontFamily: {
             'primary': "var(--font-primary)",
@@ -62,6 +72,7 @@ export default {
         fontWeight: {
             'light': 400,
             'normal': 400,
+            'semibold': 600,
             'bold': 700
         },
         lineHeight: {
@@ -77,7 +88,9 @@ export default {
             '1-1/2': '1.5rem', //24px
             '2': '2rem', //32px
             '3': '3rem', //48px
-            '4': '4rem', //64px
+        },
+        backdropBlur:{
+            '10':'10px',
         },
         height: {
             8: '8px',
@@ -89,6 +102,7 @@ export default {
             74: '74px',
             148: '148px',
             196: '196px',
+            460: '460px',
             'auto': 'auto',
             'full': '100%',
             'screen': '100vh',

@@ -4,7 +4,7 @@
 
 <template>
 <main class="bg-primary-100 overflow-y-auto">
-  <div class="p-1-1/2 h-full">
+  <div class="p-1-1/2 ">
       <slot>
 
       </slot>
