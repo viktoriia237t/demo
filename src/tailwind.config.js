@@ -173,6 +173,7 @@ export default {
             1: 1,
             2: 2,
             3: 3,
+            10: 10,
 
         },
         inset: {

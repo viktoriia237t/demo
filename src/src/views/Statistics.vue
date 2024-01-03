@@ -17,7 +17,7 @@ import BaseSortTime from "@/components/base/BaseSortTime.vue";
     <div>
       <div class="flex items-center justify-between">
         <div>
-          <base-sort-time/>
+          <base-sort-time />
         </div>
         <div>
           Calendar

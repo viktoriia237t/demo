@@ -1,6 +1,7 @@
 <script setup>
 
 import BaseLabel from "@/components/base/BaseLabel.vue";
+import BaseSortTime from "@/components/base/BaseSortTime.vue";
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import BaseLabel from "@/components/base/BaseLabel.vue";
         <div class="text-white font-base font-bold text-md">
           Прибыль & Убыток
         </div>
+        <base-sort-time/>
       </div>
 
     <svg width="733" height="301" viewBox="0 0 733 301" fill="none" xmlns="http://www.w3.org/2000/svg">
