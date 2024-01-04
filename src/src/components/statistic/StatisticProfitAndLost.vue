@@ -2,6 +2,7 @@
 
 import BaseLabel from "@/components/base/BaseLabel.vue";
 import BaseSortTime from "@/components/base/BaseSortTime.vue";
+import BaseCalendar from "@/components/base/BaseCalendar.vue";
 </script>
 
 <template>
@@ -10,7 +11,11 @@ import BaseSortTime from "@/components/base/BaseSortTime.vue";
         <div class="text-white font-base font-bold text-md">
           Прибыль & Убыток
         </div>
-        <base-sort-time />
+        <div class="flex items-center gap-1/2">
+          <base-sort-time  />
+          <base-calendar :format="'MMMM, yyyy'" />
+        </div>
+
       </div>
 
     <svg width="733" height="301" viewBox="0 0 733 301" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -10,13 +10,14 @@
 }
 
 .dp__input {
+    width: 180px;
+    height: 34px;
     background-color: transparent;
     border-radius: var(--dp-border-radius);
     font-family: var(--dp-font-family);
     border: 1px solid var(--dp-border-color);
     outline: none;
     transition: border-color .2s cubic-bezier(0.645, 0.045, 0.355, 1);
-    width: 100%;
     font-size: var(--dp-font-size);
     padding: 0.5rem;
     color: var(--white);

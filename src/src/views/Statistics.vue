@@ -21,7 +21,7 @@ import BaseCalendar from "@/components/base/BaseCalendar.vue";
           <base-sort-time />
         </div>
         <div>
-          <base-calendar/>
+          <base-calendar :format="'dd MMMM, yyyy'"/>
         </div>
       </div>
       <div class="grid grid-cols-4 gap-1-1/2 pt-2">
