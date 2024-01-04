@@ -70,7 +70,7 @@ export default {
             'base': "var(--font-base)",
         },
         fontWeight: {
-            'light': 400,
+            'light': 300,
             'normal': 400,
             'semibold': 600,
             'bold': 700
@@ -129,9 +129,11 @@ export default {
             74: '74px',
             88: '88px',
             148: '148px',
+            178: '178px',
             200: '200px',
             290: '290px',
             368: '368px',
+            'auto': 'auto',
             'full': '100%',
             'fit-content': 'fit-content',
         },
@@ -158,6 +160,7 @@ export default {
         boxShadow: {
             '0': '0',
             'sm': '0px 1px 3px 0px rgba(0, 0, 0, 0.06)',
+            'lg' : '-4px 4px 24px 0px var(--primary-100)'
 
         },
         transitionDuration: {

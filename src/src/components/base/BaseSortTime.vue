@@ -2,6 +2,12 @@
 
 import {ref} from "vue";
 
+defineProps({
+  name:{
+    type: String
+  }
+})
+
 const periods = [
   {
     period: 'day',
@@ -37,12 +43,13 @@ const selectedItem = ref(false);
         >
           {{ item.label }}
         </label>
-        <input type="radio"
-               v-model="selectedItem"
-               class="hidden"
-               :id="item.period"
-               :value="item.period"
-               @change="selectedItem">
+        <input
+            type="radio"
+            v-model="selectedItem"
+            class="hidden"
+            :id="item.period"
+            :value="item.period"
+            @change="selectedItem">
       </div>
 
     </div>

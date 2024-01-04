@@ -8,7 +8,7 @@ import BaseLabel from "@/components/base/BaseLabel.vue";
 <template>
 <div class="border-1 border-primary-40 h-460 flex flex-col justify-end p-1-1/2 relative">
   <img :src="mainStatistigBg" alt="img"
-       class="top-0 bottom-0 left-0 right-0 object-cover absolute z-0 h-[458px]">
+       class="top-0 bottom-0 left-0 right-0 object-cover w-full absolute z-0 h-[458px]">
   <div class="text-4 font-bold font-base mb-2 leading-1 z-1">
     Общая <br> статистика
   </div>

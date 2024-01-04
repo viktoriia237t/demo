@@ -5,6 +5,7 @@ import StatisticDeposite from "@/components/statistic/StatisticDeposite.vue";
 import StatisticTraders from "@/components/statistic/StatisticTraders.vue";
 import StatisticProfitAndLost from "@/components/statistic/StatisticProfitAndLost.vue";
 import BaseSortTime from "@/components/base/BaseSortTime.vue";
+import BaseCalendar from "@/components/base/BaseCalendar.vue";
 </script>
 
 <template>
@@ -20,7 +21,7 @@ import BaseSortTime from "@/components/base/BaseSortTime.vue";
           <base-sort-time />
         </div>
         <div>
-          Calendar
+          <base-calendar/>
         </div>
       </div>
       <div class="grid grid-cols-4 gap-1-1/2 pt-2">
