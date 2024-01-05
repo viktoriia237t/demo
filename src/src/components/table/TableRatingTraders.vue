@@ -1,9 +1,7 @@
 <script setup>
 
-import LabelCoin from "@/components/table/LabelCoin.vue";
-import LabelValue from "@/components/table/LabelValue.vue";
-import Row from "@/components/table/RatingTraders/Row.vue"
 import {ref, provide} from "vue";
+import RowTraders from "@/components/table/RatingTraders/RowTraders.vue";
 
 
 const grid = {
@@ -88,7 +86,135 @@ const gridData = [
         value: '8',
       },
       pnl: {
-        value: '112',
+        value: 112,
+      },
+      action: {
+        value: 'icon'
+      }
+    },
+    childRows:[
+      {
+        chevron:{
+          isShow: true
+        },
+        coin: {
+          name: 'BTCUSDT',
+          icon: 'c-btc'
+        },
+        price: {
+          value: '38554',
+          status: 'low'
+        },
+        volume: {
+          value: '-8052',
+        },
+      },
+      {
+        chevron:{
+          isShow: true
+        },
+        coin: {
+          name: 'BTCUSDT',
+          icon: 'c-btc'
+        },
+        price: {
+          value: '554',
+          status: 'high'
+        },
+        volume: {
+          value: '52',
+        },
+      },
+      {
+        chevron:{
+          isShow: true
+        },
+        coin: {
+          name: 'BTCUSDT',
+          icon: 'c-btc'
+        },
+        price: {
+          value: '38554',
+          status: 'low'
+        },
+        volume: {
+          value: '-8052',
+        },
+      }
+    ]
+  },
+  {
+    row: {
+      id: {
+        value: 0
+      },
+      api: {
+        value: 'CXE9uaEZ',
+      },
+      deposit: {
+        value: '50 154 $',
+      },
+      roi: {
+        value: '122%',
+      },
+      deals: {
+        value: '87%',
+      },
+      chevron: {
+        isShow: false
+      },
+      coin: {
+        name: 'BTCUSDT',
+        icon: 'c-btc'
+      },
+      price: {
+        value: '38 554 $',
+        status: 'low'
+      },
+      volume: {
+        value: -80,
+      },
+      pnl: {
+        value: 112,
+      },
+      action: {
+        value: 'icon'
+      }
+    },
+  },
+  {
+    row: {
+      id: {
+        value: 0
+      },
+      api: {
+        value: 'CXE9uaEZ',
+      },
+      deposit: {
+        value: '50 154 $',
+      },
+      roi: {
+        value: '122%',
+      },
+      deals: {
+        value: '87%',
+      },
+      chevron: {
+        isShow: true
+      },
+      coin: {
+        name: 'BTCUSDT',
+        icon: 'c-btc'
+      },
+      price: {
+        value: '38 554 $',
+        status: 'low'
+      },
+      volume: {
+        value: 8,
+      },
+      pnl: {
+        value: 112,
       },
       action: {
         value: 'icon'
@@ -174,10 +300,10 @@ const gridData = [
         status: 'low'
       },
       volume: {
-        value: '8',
+        value: 8,
       },
       pnl: {
-        value: '112',
+        value: 112,
       },
       action: {
         value: 'icon'
@@ -263,10 +389,138 @@ const gridData = [
         status: 'low'
       },
       volume: {
-        value: '8',
+        value: 815,
       },
       pnl: {
-        value: '112',
+        value: 112,
+      },
+      action: {
+        value: 'icon'
+      }
+    },
+    childRows:[
+      {
+        chevron:{
+          isShow: true
+        },
+        coin: {
+          name: 'BTCUSDT',
+          icon: 'c-btc'
+        },
+        price: {
+          value: '38554',
+          status: 'low'
+        },
+        volume: {
+          value: '-8052',
+        },
+      },
+      {
+        chevron:{
+          isShow: true
+        },
+        coin: {
+          name: 'BTCUSDT',
+          icon: 'c-btc'
+        },
+        price: {
+          value: '554',
+          status: 'high'
+        },
+        volume: {
+          value: '52',
+        },
+      },
+      {
+        chevron:{
+          isShow: true
+        },
+        coin: {
+          name: 'BTCUSDT',
+          icon: 'c-btc'
+        },
+        price: {
+          value: '38554',
+          status: 'low'
+        },
+        volume: {
+          value: '-8052',
+        },
+      }
+    ]
+  },
+  {
+    row: {
+      id: {
+        value: 0
+      },
+      api: {
+        value: 'CXE9uaEZ',
+      },
+      deposit: {
+        value: '50 154 $',
+      },
+      roi: {
+        value: '122%',
+      },
+      deals: {
+        value: '87%',
+      },
+      chevron: {
+        isShow: false
+      },
+      coin: {
+        name: 'BTCUSDT',
+        icon: 'c-btc'
+      },
+      price: {
+        value: '38 554 $',
+        status: 'low'
+      },
+      volume: {
+        value: -80,
+      },
+      pnl: {
+        value: 112,
+      },
+      action: {
+        value: 'icon'
+      }
+    },
+  },
+  {
+    row: {
+      id: {
+        value: 0
+      },
+      api: {
+        value: 'CXE9uaEZ',
+      },
+      deposit: {
+        value: '50 154 $',
+      },
+      roi: {
+        value: '122%',
+      },
+      deals: {
+        value: '87%',
+      },
+      chevron: {
+        isShow: true
+      },
+      coin: {
+        name: 'BTCUSDT',
+        icon: 'c-btc'
+      },
+      price: {
+        value: '38 554 $',
+        status: 'low'
+      },
+      volume: {
+        value: 87235,
+      },
+      pnl: {
+        value: 112,
       },
       action: {
         value: 'icon'
@@ -352,10 +606,10 @@ const gridData = [
         status: 'low'
       },
       volume: {
-        value: '8',
+        value: 18,
       },
       pnl: {
-        value: '112',
+        value: 112,
       },
       action: {
         value: 'icon'
@@ -439,7 +693,7 @@ const openCoinInfo = ref(true);
   </div>
   <div class="flex flex-col gap-1/2">
     <div v-for="{row, childRows} in gridData">
-      <Row :row="row" :child-rows="childRows" />
+      <RowTraders :row="row" :child-rows="childRows" />
     </div>
   </div>
 

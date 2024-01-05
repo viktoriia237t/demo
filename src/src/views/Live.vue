@@ -3,6 +3,7 @@ import AppLayout from "@/views/layout/AppLayout.vue";
 import LiveSorting from "@/components/live/LiveSorting.vue";
 import TableRatingCoin from "@/components/table/TableRatingCoin.vue";
 import TableRatingTraders from "@/components/table/TableRatingTraders.vue";
+import BasePagination from "@/components/base/BasePagination.vue";
 </script>
 
 <template>
@@ -33,7 +34,10 @@ import TableRatingTraders from "@/components/table/TableRatingTraders.vue";
         <table-rating-coin/>
 
       </div>
-    </div>
 
+    </div>
+    <div class="flex justify-end py-2">
+      <base-pagination/>
+    </div>
   </AppLayout>
 </template>

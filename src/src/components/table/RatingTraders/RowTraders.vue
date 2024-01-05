@@ -3,7 +3,7 @@ import LabelValue from "@/components/table/LabelValue.vue";
 import IconChartLine from "@/components/icons/IconChartLine.vue";
 import LabelCoin from "@/components/table/LabelCoin.vue";
 import IconShowMore from "@/components/icons/IconShowMore.vue";
-import {inject, ref} from "vue";
+import {inject, ref, Transition} from "vue";
 
 defineProps({
   row: {
@@ -76,38 +76,40 @@ const isOpen = ref(false);
         </span>
       </div>
   </div>
-  <div class="flex  flex-col gap-3/4 bg-primary-110 py-1" v-if="isOpen">
-    <div v-for="childRow in childRows" class="flex items-center justify-between  px-3/4 gap-x-3/4">
-      <div v-for="(col, key, index) in row" class="text-md font-base font-normal gap-y-3/4"
-           :class="grid[key].width">
-        <span v-if="childRow?.[key] && key === 'chevron'" class="relative">
-          <span class="absolute w-[1px] left-[8px] h-[36px] bg-primary-40 top-[-36px] ">
+  <Transition>
+    <div class="flex  flex-col gap-3/4 bg-primary-110 py-1" v-if="isOpen">
+      <div v-for="childRow in childRows" class="flex items-center justify-between  px-3/4 gap-x-3/4">
+        <div v-for="(col, key, index) in row" class="text-md font-base font-normal gap-y-3/4"
+             :class="grid[key].width">
+          <span v-if="childRow?.[key] && key === 'chevron'" class="relative">
+            <span class="absolute w-[1px] left-[8px] h-[36px] bg-primary-40 top-[-36px] ">
 
-          </span>
-          <span class="absolute h-[1px] left-[8px] w-[26px] bg-primary-40 top-[0px]">
+            </span>
+            <span class="absolute h-[1px] left-[8px] w-[26px] bg-primary-40 top-[0px]">
 
+            </span>
           </span>
-        </span>
-        <span v-if="childRow?.[key] && key === 'coin'">
-          <label-coin :name="childRow?.[key].name" :image-name="childRow?.[key].icon"/>
-        </span>
-        <span v-if="childRow?.[key] && key === 'price'" class="relative flex items-center left-[-30px] gap-3/4">
-          <span :class="{
+          <span v-if="childRow?.[key] && key === 'coin'">
+            <label-coin :name="childRow?.[key].name" :image-name="childRow?.[key].icon"/>
+          </span>
+          <span v-if="childRow?.[key] && key === 'price'" class="relative flex items-center left-[-30px] gap-3/4">
+            <span :class="{
             'text-red ': childRow?.[key].status === 'low',
             'text-green rotate-180': childRow?.[key].status === 'high',
           }">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M14 5L8 12L2 5L14 5Z" fill="currentColor"/>
-            </svg>
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14 5L8 12L2 5L14 5Z" fill="currentColor"/>
+              </svg>
+            </span>
+            {{ childRow?.[key].value }}
           </span>
-          {{ childRow?.[key].value }}
-        </span>
-        <span v-if="childRow?.[key] && key === 'volume'">
-          <label-value :size="'md'" :font-bold="false" :value="childRow?.[key].value"/>
-        </span>
+          <span v-if="childRow?.[key] && key === 'volume'">
+            <label-value :size="'md'" :font-bold="false" :value="childRow?.[key].value"/>
+          </span>
+        </div>
       </div>
     </div>
-  </div>
+  </Transition>
 
 </template>
 
