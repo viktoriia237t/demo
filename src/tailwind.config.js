@@ -15,6 +15,7 @@ export default {
             'primary-85': 'var(--primary-85)',
             'primary-90': 'var(--primary-90)',
             'primary-100': 'var(--primary-100)',
+            'primary-110': 'var(--primary-110)',
             'primary-070': 'var(--primary-070)',
 
             'white-50': 'var(--white-50)',
@@ -73,6 +74,7 @@ export default {
         fontWeight: {
             'light': 300,
             'normal': 400,
+            'medium': 500,
             'semibold': 600,
             'bold': 700
         },

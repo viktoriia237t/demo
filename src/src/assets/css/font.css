@@ -53,3 +53,14 @@
     font-style: normal;
     font-display: swap;
 }
+@font-face {
+    font-family: 'SFUIText';
+    src: url('../font/SFUIText-Medium.eot');
+    src: url('../font/SFUIText-Medium.eot?#iefix') format('embedded-opentype'),
+        /*url('../font/SFUIText-Light.woff2') format('woff2'),*/
+    url('../font/SFUIText-Medium.woff') format('woff'),
+    url('../font/SFUIText-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

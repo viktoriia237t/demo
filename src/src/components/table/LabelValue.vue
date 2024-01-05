@@ -8,7 +8,11 @@ const props = defineProps({
   size:{
     type: String,
     default: 'sm'
-  }
+  },
+  fontBold: {
+    type: Boolean,
+    default: true
+  },
 })
 
 const numberValue =  new Intl.NumberFormat('ru-RU', { style: 'decimal' }).format(props.value);
@@ -16,12 +20,14 @@ const numberValue =  new Intl.NumberFormat('ru-RU', { style: 'decimal' }).format
 </script>
 
 <template>
-  <span class="text-sm font-bold font-base uppercase"
+  <span class="text-sm  font-base uppercase"
         :class="{
       'text-sm': size === 'sm',
       'text-md': size === 'md',
       'text-red': props.value < 0,
-      'text-green': props.value > 0
+      'text-green': props.value > 0,
+      'font-bold': fontBold,
+      'font-normal': !fontBold
     }"
   >
     {{ numberValue }} $
