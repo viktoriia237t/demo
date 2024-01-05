@@ -37,7 +37,7 @@ emit('closeSidebar')
 
 </template>
 
-<style scoped>
+<style >
 .modal {
   backdrop-filter: blur(12px);
 }

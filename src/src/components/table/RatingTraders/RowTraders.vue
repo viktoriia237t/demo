@@ -76,7 +76,7 @@ const isOpen = ref(false);
         </span>
       </div>
   </div>
-  <Transition>
+  <Transition name="component-fade" mode="out-in">
     <div class="flex  flex-col gap-3/4 bg-primary-110 py-1" v-if="isOpen">
       <div v-for="childRow in childRows" class="flex items-center justify-between  px-3/4 gap-x-3/4">
         <div v-for="(col, key, index) in row" class="text-md font-base font-normal gap-y-3/4"
@@ -113,6 +113,12 @@ const isOpen = ref(false);
 
 </template>
 
-<style scoped>
-
+<style>
+.component-fade-enter-active, .component-fade-leave-active {
+  transition: opacity .4s ease;
+}
+.component-fade-enter, .component-fade-leave-to
+  /* .component-fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+}
 </style>
