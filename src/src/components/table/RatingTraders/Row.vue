@@ -21,7 +21,7 @@ const isOpen = ref(false);
 </script>
 
 <template>
-  <div class="flex items-center justify-between bg-primary-85 px-3/4 gap-x-3/4 py-1">
+  <div class="flex items-center justify-between bg-primary-85 px-3/4 gap-x-3/4 py-1 relative z-1">
       <div v-for="(col, key, index) in row" class="text-md font-base font-normal gap-y-1/2"
            :class="grid[key].width">
         <span v-if="key ===  'id'" class="text-white-50 text-sm font-base font-normal text-center">
@@ -36,7 +36,11 @@ const isOpen = ref(false);
           {{ col.value }}
         </span>
         <span v-else-if="key ===  'chevron'" @click="isOpen = !isOpen">
-          <svg class="cursor-pointer" v-if="col.isShow" width="16" height="16" viewBox="0 0 16 16" fill="none"
+          <svg class="cursor-pointer"
+               :class="{
+                'rotate-180': isOpen
+               }"
+               v-if="col.isShow" width="16" height="16" viewBox="0 0 16 16" fill="none"
                xmlns="http://www.w3.org/2000/svg">
             <path
                 d="M4.75038 5.53027L7.80371 8.58361L10.8637 5.53027L11.8037 6.47027L7.80371 10.4703L3.80371 6.47027L4.75038 5.53027Z"
@@ -76,11 +80,11 @@ const isOpen = ref(false);
     <div v-for="childRow in childRows" class="flex items-center justify-between  px-3/4 gap-x-3/4">
       <div v-for="(col, key, index) in row" class="text-md font-base font-normal gap-y-3/4"
            :class="grid[key].width">
-        <span v-if="childRow?.[key] && key === 'chevron'">
-          <span class=" relative w-[1px] h-full bg-primary-40 -top-1">
+        <span v-if="childRow?.[key] && key === 'chevron'" class="relative">
+          <span class="absolute w-[1px] left-[8px] h-[36px] bg-primary-40 top-[-36px] ">
 
           </span>
-          <span class=" relative h-[1px] w-full bg-primary-40 -top-1">
+          <span class="absolute h-[1px] left-[8px] w-[26px] bg-primary-40 top-[0px]">
 
           </span>
         </span>

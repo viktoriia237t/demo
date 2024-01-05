@@ -120,11 +120,278 @@ const gridData = [
           icon: 'c-btc'
         },
         price: {
+          value: '554',
+          status: 'high'
+        },
+        volume: {
+          value: '52',
+        },
+      },
+      {
+        chevron:{
+          isShow: true
+        },
+        coin: {
+          name: 'BTCUSDT',
+          icon: 'c-btc'
+        },
+        price: {
           value: '38554',
           status: 'low'
         },
         volume: {
           value: '-8052',
+        },
+      }
+    ]
+  },
+  {
+    row: {
+      id: {
+        value: 0
+      },
+      api: {
+        value: 'CXE9uaEZ',
+      },
+      deposit: {
+        value: '50 154 $',
+      },
+      roi: {
+        value: '122%',
+      },
+      deals: {
+        value: '87%',
+      },
+      chevron: {
+        isShow: true
+      },
+      coin: {
+        name: 'BTCUSDT',
+        icon: 'c-btc'
+      },
+      price: {
+        value: '38 554 $',
+        status: 'low'
+      },
+      volume: {
+        value: '8',
+      },
+      pnl: {
+        value: '112',
+      },
+      action: {
+        value: 'icon'
+      }
+    },
+    childRows:[
+      {
+        chevron:{
+          isShow: true
+        },
+        coin: {
+          name: 'BTCUSDT',
+          icon: 'c-btc'
+        },
+        price: {
+          value: '38554',
+          status: 'low'
+        },
+        volume: {
+          value: '-8052',
+        },
+      },
+      {
+        chevron:{
+          isShow: true
+        },
+        coin: {
+          name: 'BTCUSDT',
+          icon: 'c-btc'
+        },
+        price: {
+          value: '554',
+          status: 'high'
+        },
+        volume: {
+          value: '52',
+        },
+      },
+      {
+        chevron:{
+          isShow: true
+        },
+        coin: {
+          name: 'BTCUSDT',
+          icon: 'c-btc'
+        },
+        price: {
+          value: '38554',
+          status: 'low'
+        },
+        volume: {
+          value: '-8052',
+        },
+      }
+    ]
+  },
+  {
+    row: {
+      id: {
+        value: 0
+      },
+      api: {
+        value: 'CXE9uaEZ',
+      },
+      deposit: {
+        value: '50 154 $',
+      },
+      roi: {
+        value: '122%',
+      },
+      deals: {
+        value: '87%',
+      },
+      chevron: {
+        isShow: true
+      },
+      coin: {
+        name: 'BTCUSDT',
+        icon: 'c-btc'
+      },
+      price: {
+        value: '38 554 $',
+        status: 'low'
+      },
+      volume: {
+        value: '8',
+      },
+      pnl: {
+        value: '112',
+      },
+      action: {
+        value: 'icon'
+      }
+    },
+    childRows:[
+      {
+        chevron:{
+          isShow: true
+        },
+        coin: {
+          name: 'BTCUSDT',
+          icon: 'c-btc'
+        },
+        price: {
+          value: '38554',
+          status: 'low'
+        },
+        volume: {
+          value: '-8052',
+        },
+      },
+      {
+        chevron:{
+          isShow: true
+        },
+        coin: {
+          name: 'BTCUSDT',
+          icon: 'c-btc'
+        },
+        price: {
+          value: '554',
+          status: 'high'
+        },
+        volume: {
+          value: '52',
+        },
+      },
+      {
+        chevron:{
+          isShow: true
+        },
+        coin: {
+          name: 'BTCUSDT',
+          icon: 'c-btc'
+        },
+        price: {
+          value: '38554',
+          status: 'low'
+        },
+        volume: {
+          value: '-8052',
+        },
+      }
+    ]
+  },
+  {
+    row: {
+      id: {
+        value: 0
+      },
+      api: {
+        value: 'CXE9uaEZ',
+      },
+      deposit: {
+        value: '50 154 $',
+      },
+      roi: {
+        value: '122%',
+      },
+      deals: {
+        value: '87%',
+      },
+      chevron: {
+        isShow: true
+      },
+      coin: {
+        name: 'BTCUSDT',
+        icon: 'c-btc'
+      },
+      price: {
+        value: '38 554 $',
+        status: 'low'
+      },
+      volume: {
+        value: '8',
+      },
+      pnl: {
+        value: '112',
+      },
+      action: {
+        value: 'icon'
+      }
+    },
+    childRows:[
+      {
+        chevron:{
+          isShow: true
+        },
+        coin: {
+          name: 'BTCUSDT',
+          icon: 'c-btc'
+        },
+        price: {
+          value: '38554',
+          status: 'low'
+        },
+        volume: {
+          value: '-8052',
+        },
+      },
+      {
+        chevron:{
+          isShow: true
+        },
+        coin: {
+          name: 'BTCUSDT',
+          icon: 'c-btc'
+        },
+        price: {
+          value: '554',
+          status: 'high'
+        },
+        volume: {
+          value: '52',
         },
       },
       {
@@ -147,292 +414,6 @@ const gridData = [
   }
 ]
 
-const data = [
-  {
-    id: {
-      value: 0
-    },
-    api: {
-      value: 'CXE9uaEZ',
-    },
-    deposit: {
-      value: '50 154 $',
-    },
-    roi: {
-      value: '122%',
-    },
-    deals: {
-      value: '87%',
-    },
-    coin: {
-      name: 'BTCUSDT',
-      icon: 'c-btc'
-    },
-    price: {
-      value: '38 554 $',
-      status: 'low'
-    },
-    volume: {
-      value: '8',
-    },
-    pnl: {
-      value: '112',
-    },
-    action: {
-      value: 'icon'
-    }
-  },
-  {
-    id: {
-      value: 0
-    },
-    api: {
-      value: 'CXE9uaEZ',
-    },
-    deposit: {
-      value: '50 154 $',
-    },
-    roi: {
-      value: '122%',
-    },
-    deals: {
-      value: '87%',
-    },
-    chevron: {
-      isShow: false,
-    },
-    coin: {
-      name: 'BTCUSDT',
-      icon: 'c-btc'
-    },
-    price: {
-      value: '38 554 $',
-      status: 'high'
-    },
-    volume: {
-      value: '8052',
-    },
-    pnl: {
-      value: '-112',
-    },
-    action: {
-      value: 'icon'
-    }
-  },
-  {
-    id: {
-      value: 0
-    },
-    api: {
-      value: 'CXE9uaEZ',
-    },
-    deposit: {
-      value: '50 154 $',
-    },
-    roi: {
-      value: '122%',
-    },
-    deals: {
-      value: '87%',
-    },
-    chevron: {
-      isShow: true,
-      moreValue: {
-        coin: {
-          name: 'BTCUSDT',
-          icon: 'c-btc'
-        },
-        price: {
-          value: '38554',
-          status: 'low'
-        },
-        volume: {
-          value: '-8052',
-        },
-      }
-    },
-    coin: {
-      name: 'BTCUSDT',
-      icon: 'c-btc'
-    },
-    price: {
-      value: '38 554 $',
-      status: 'low'
-    },
-    volume: {
-      value: '8052',
-    },
-    pnl: {
-      value: '-112',
-    },
-    action: {
-      value: 'icon'
-    }
-  },
-  {
-    id: {
-      value: 0
-    },
-    api: {
-      value: 'CXE9uaEZ',
-    },
-    deposit: {
-      value: '50 154 $',
-    },
-    roi: {
-      value: '122%',
-    },
-    deals: {
-      value: '87%',
-    },
-    chevron: {
-      isShow: false,
-    },
-    coin: {
-      name: 'BTCUSDT',
-      icon: 'c-btc'
-    },
-    price: {
-      value: '38 554 $',
-      status: 'low'
-    },
-    volume: {
-      value: '052',
-    },
-    pnl: {
-      value: '112',
-    },
-    action: {
-      value: 'icon'
-    }
-  },
-  {
-    id: {
-      value: 0
-    },
-    api: {
-      value: 'CXE9uaEZ',
-    },
-    deposit: {
-      value: '50 154 $',
-    },
-    roi: {
-      value: '122%',
-    },
-    deals: {
-      value: '87%',
-    },
-    chevron: {
-      isShow: true,
-      moreValue: {
-        coin: {
-          name: 'BTCUSDT',
-          icon: 'c-btc'
-        },
-        price: {
-          value: '38554',
-          status: 'low'
-        },
-        volume: {
-          value: '-8052',
-        },
-      }
-    },
-    coin: {
-      name: 'BTCUSDT',
-      icon: 'c-btc'
-    },
-    price: {
-      value: '38 554 $',
-      status: 'low'
-    },
-    volume: {
-      value: '-8052',
-    },
-    pnl: {
-      value: '112',
-    },
-    action: {
-      value: 'icon'
-    }
-  },
-  {
-    id: {
-      value: 0
-    },
-    api: {
-      value: 'CXE9uaEZ',
-    },
-    deposit: {
-      value: '50 154 $',
-    },
-    roi: {
-      value: '122%',
-    },
-    deals: {
-      value: '87%',
-    },
-    chevron: {
-      isShow: true,
-    },
-    coin: {
-      name: 'BTCUSDT',
-      icon: 'c-btc',
-      additional: [
-        {
-          name: 'BTCUSDT',
-          icon: 'c-btc'
-        },
-        {
-          name: 'BTCUSDT',
-          icon: 'c-btc'
-        },
-        {
-          name: 'BTCUSDT',
-          icon: 'c-btc'
-        },
-      ]
-    },
-    price: {
-      value: '38 554 $',
-      status: 'low',
-      additional: [
-        {
-          value: '38554',
-          status: 'low'
-        },
-        {
-          value: '38554',
-          status: 'low'
-        },
-        {
-          value: '38554',
-          status: 'low'
-        },
-      ]
-    },
-    volume: {
-      value: '-8052',
-      additional:[
-        {
-          value: '-8052'
-        },
-        {
-          value: '-8052'
-        },
-        {
-          value: '-8052'
-        },
-      ]
-    },
-    pnl: {
-      value: '112',
-    },
-    action: {
-      value: 'icon'
-    }
-  },
-]
 
 const openCoinInfo = ref(true);
 </script>
