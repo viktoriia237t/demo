@@ -1,9 +1,18 @@
 <script setup>
 import {ref} from "vue";
 const  openDropdown = ref(false);
-const listPeriods = ['Депозитам', ' ROI', 'Прибыльным сделкам', 'Объему', 'Pnl'];
-const selectedItem = ref('Сортировать по');
 
+
+defineProps({
+  listSort: {
+    type: Array,
+    default: null
+  },
+  selectedItem: {
+    type: String,
+    default: null
+  }
+})
 
 </script>
 
@@ -26,7 +35,7 @@ const selectedItem = ref('Сортировать по');
       </span>
     </div>
     <div v-if="openDropdown" class="border-1 border-primary-40 divide-y-1 divide-primary-40 shadow-lg bg-primary-80 w-178 absolute right-0 top-2 z-5">
-      <div class="text-sm text-white font-normal font-base p-3/4 cursor-pointer" @click="selectedItem = item" v-for="item in listPeriods">
+      <div class="text-sm text-white font-normal font-base p-3/4 cursor-pointer" @click="selectedItem = item" v-for="item in listSort">
         {{item }}
       </div>
     </div>
