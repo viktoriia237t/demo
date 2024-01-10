@@ -67,7 +67,7 @@ const tableItems = [
       </tr>
     </thead>
     <tbody>
-      <tr v-for="(item, index) in tableItems" class="even:bg-primary-85 odd:bg-[#1C1D24]">
+      <tr v-for="(item, index) in tableItems" class="even:bg-primary-85 odd:bg-primary-120">
         <td class="text-white-50 text-sm font-base font-normal text-center py-1/2">
           <span v-if="index <= 9">
             0{{index+1}}

@@ -1,5 +1,5 @@
 <script setup>
-import IconChewronRight from "@/components/icons/IconChewronRight.vue";
+import IconChevronRight from "@/components/icons/IconChevronRight.vue";
 import UserPhoto from "@/components/user/UserPhoto.vue";
 import {useMenuStore} from "@/stores/menuStore.js";
 

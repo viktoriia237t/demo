@@ -8,6 +8,10 @@ const props = defineProps({
   name: {
     type: String
   },
+  fillBg:{
+    default: true,
+    type:Boolean
+  }
 })
 
 function getImageUrl(name) {
@@ -17,7 +21,11 @@ function getImageUrl(name) {
 </script>
 
 <template>
-  <div class="bg-white-5 rounded-1/8 px-1/2 gap-1/2 flex items-center py-1/4 w-fit-content">
+  <div class="rounded-1/8 gap-1/2 flex items-center w-fit-content"
+  :class="{
+    'bg-white-5 py-1/4 px-1/2 ': fillBg,
+    'bg-transparent': !fillBg
+  }">
     <span>
       <img :src="getImageUrl(imageName)" alt="" class="w-12 h-12 min-w-12">
     </span>

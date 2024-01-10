@@ -16,6 +16,7 @@ export default {
             'primary-90': 'var(--primary-90)',
             'primary-100': 'var(--primary-100)',
             'primary-110': 'var(--primary-110)',
+            'primary-120': 'var(--primary-120)',
             'primary-070': 'var(--primary-070)',
 
             'white-50': 'var(--white-50)',
