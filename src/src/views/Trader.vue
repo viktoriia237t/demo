@@ -5,8 +5,11 @@ import BaseSorting from "@/components/base/BaseSorting.vue";
 import UserPhoto from "@/components/user/UserPhoto.vue";
 import IconArrowLeft from "@/components/icons/IconArrowLeft.vue";
 import TraderProfile from "@/components/trader/TraderProfile.vue";
-const listPeriods = ['Депозитам', ' ROI', 'Прибыльным сделкам', 'Объему', 'Pnl'];
-const selectedItem = ref('Сортировать по');
+import TableTransactions from "@/components/table/TransactionTable/TableTransactions.vue";
+import BasePagination from "@/components/base/BasePagination.vue";
+
+
+
 </script>
 
 <template>
@@ -38,6 +41,26 @@ const selectedItem = ref('Сортировать по');
           <div>
             <base-sorting :list-sort="listPeriods" :selected-item="selectedItem"/>
           </div>
+        </div>
+        <table-transactions :status="'active'"/>
+        <div class="flex items-center justify-between gap-1 my-1-1/2 relative">
+          <div class="w-full relative">
+            <div class="text-sm font-base font-bold z-2 text-white px-1 -top-[10px] absolute left-half transform -translate-x-half bg-primary-100">
+              <span class="opacity-30 ">
+                закрытые
+              </span>
+            </div>
+            <span class="w-full h-[1px] bg-primary-40 block z-1"></span>
+          </div>
+
+          <div>
+            <base-sorting :list-sort="listPeriods" :selected-item="'Сегодня'"/>
+          </div>
+        </div>
+
+        <table-transactions :status="'inactive'"/>
+        <div class="flex justify-end py-2">
+          <base-pagination/>
         </div>
       </div>
       <div class="col-start-5 col-end-6 -mt-1-1/2">

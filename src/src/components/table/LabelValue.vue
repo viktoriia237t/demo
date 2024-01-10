@@ -13,6 +13,10 @@ const props = defineProps({
     type: Boolean,
     default: true
   },
+  percent: {
+    type: Boolean,
+    default: false
+  }
 })
 
 const numberValue =  new Intl.NumberFormat('ru-RU', { style: 'decimal' }).format(props.value);
@@ -20,7 +24,7 @@ const numberValue =  new Intl.NumberFormat('ru-RU', { style: 'decimal' }).format
 </script>
 
 <template>
-  <span class="text-sm  font-base uppercase"
+  <span class="font-base uppercase"
         :class="{
       'text-sm': size === 'sm',
       'text-md': size === 'md',
@@ -30,7 +34,7 @@ const numberValue =  new Intl.NumberFormat('ru-RU', { style: 'decimal' }).format
       'font-normal': !fontBold
     }"
   >
-    {{ numberValue }} $
+    {{ numberValue }} <span v-if="!percent">$</span> <span v-if="percent">%</span>
   </span>
 </template>
 

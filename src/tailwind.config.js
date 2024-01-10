@@ -216,6 +216,7 @@ export default {
             '3/8': '0.375rem', //6px
             '1/2': '0.5rem', //8px
             '1': '1rem', //16px
+            'half': '50%',
         },
         divideWidth: {
             0: '0px',

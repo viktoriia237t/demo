@@ -2,7 +2,6 @@
 
 import TradersTableHeader from "@/components/table/TradersTable/TradersTableHeader.vue";
 import TradersTableRow from "@/components/table/TradersTable/TradersTableRow.vue";
-import RowTraders from "@/components/table/RatingTraders/RowTraders.vue";
 import {provide} from "vue";
 
 
@@ -189,7 +188,6 @@ provide('gridTraders', gridTraders);
 
 <template>
   <traders-table-header :grid="gridTraders"/>
-
   <div class="flex flex-col gap-1/2">
     <div v-for="(row, index) in tradersRow">
       <traders-table-row :row="row" :index="index" />

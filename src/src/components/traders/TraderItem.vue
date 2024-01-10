@@ -30,7 +30,7 @@ const menu = useMenuStore()
             }"
     >
       <span class="w-16 h-16 min-w-16 opacity-50">
-        <icon-chewron-right/>
+        <icon-chevron-right/>
       </span>
     </div>
   </div>
