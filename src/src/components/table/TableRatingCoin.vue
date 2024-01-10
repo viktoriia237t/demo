@@ -67,7 +67,7 @@ const tableItems = [
       </tr>
     </thead>
     <tbody>
-      <tr v-for="(item, index) in tableItems" class="even:bg-primary-85 odd:bg-primary-120">
+      <tr v-for="(item, index) in tableItems" class="odd:bg-[#1c1d24] even:bg-[#23242d]">
         <td class="text-white-50 text-sm font-base font-normal text-center py-1/2">
           <span v-if="index <= 9">
             0{{index+1}}
@@ -76,10 +76,11 @@ const tableItems = [
             {{index+1}}
           </span>
         </td>
+
         <td class="py-1/2">
           <label-coin :name="item.coinName" :image-name="item.coinImg"/>
         </td>
-        <td class="py-1/2 text-end px-3/4">
+        <td class="py-1/2 text-end px-3/4 ">
           <label-value :value="item.value"/>
         </td>
       </tr>

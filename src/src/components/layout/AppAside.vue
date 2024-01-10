@@ -55,7 +55,7 @@ const menu = useMenuStore()
           Трейдера
         </nav-item-link>
       </router-link>
-      <router-link to="/market">
+      <router-link to="/markets">
         <nav-item-link>
           <template #icon>
             <icon-chart/>
